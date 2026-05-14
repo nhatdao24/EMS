@@ -1,0 +1,32 @@
+CREATE TABLE T_MD_STORE (
+    CODE VARCHAR(50) ,        -- Mã cửa hàng (Khóa chính)
+    NAME NVARCHAR(255),       -- Tên cửa hàng
+    PHONE VARCHAR(20),        -- Số điện thoại (Cho phép NULL)
+    ADDRESS NVARCHAR(500) ,   -- Địa chỉ
+    AREA NVARCHAR(100) ,      -- Khu vực/Vùng
+    IS_ACTIVE BIT,
+    CREATE_BY varchar(50),
+    UPDATE_BY  varchar(50),
+    CREATE_DATE  datetime,
+    UPDATE_DATE  datetime,
+    IS_DELETED BIT,
+    DELETE_DATE datetime,
+    DELETE_BY varchar(50)
+);
+
+CREATE TABLE T_AD_ACCOUNT_STORE (
+    USER_NAME varchar(50),   --Tên đăng nhập
+    STORE_CODE VARCHAR(50)   --Mã cửa hàng,
+    IS_ACTIVE BIT,
+    CREATE_BY varchar(50),
+    UPDATE_BY  varchar(50),
+    CREATE_DATE  datetime,
+    UPDATE_DATE  datetime,
+    IS_DELETED BIT,
+    DELETE_DATE datetime,
+    DELETE_BY varchar(50)
+
+);
+
+
+
